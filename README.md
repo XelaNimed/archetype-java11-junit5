@@ -21,7 +21,7 @@ Once the archetype is installed in your local Maven repository, you will be able
 mvn archetype:generate \
   -DarchetypeGroupId=io.github.xelanimed \
   -DarchetypeArtifactId=java11-junit5 \
-  -DarchetypeVersion=0.0.1 \
+  -DarchetypeVersion=0.0.2 \
   -DgroupId=<your.group.id> \
   -DartifactId=<your-artifact-id> \
   -DinteractiveMode=false
@@ -35,7 +35,7 @@ You can also force the value of the package used:
 mvn archetype:generate \
   -DarchetypeGroupId=io.github.xelanimed \
   -DarchetypeArtifactId=java11-junit5 \
-  -DarchetypeVersion=0.0.1 \
+  -DarchetypeVersion=0.0.2 \
   -DgroupId=<your.group.id> \
   -DartifactId=<your-artifact-id> \
   -Dpackage=<your.group.id.artifact_id> \
@@ -48,7 +48,7 @@ When starting project generation interactively, values that have default values 
 mvn archetype:generate \
   -DarchetypeGroupId=io.github.xelanimed \
   -DarchetypeArtifactId=java11-junit5 \
-  -DarchetypeVersion=0.0.1 \
+  -DarchetypeVersion=0.0.2 \
   -DgroupId=my.group.id \
   -DartifactId=my-project
 ```
@@ -59,7 +59,7 @@ Output:
 [INFO] Scanning for projects...
 ...
 [INFO] Generating project in Interactive mode
-[INFO] Archetype repository not defined. Using the one from [io.github.xelanimed:java11-junit5:0.0.1] found in catalog local
+[INFO] Archetype repository not defined. Using the one from [io.github.xelanimed:java11-junit5:0.0.2] found in catalog local
 [INFO] Using property: groupId = my.group.id
 [INFO] Parameter: artifactId, Value: my-project
 [INFO] Parameter: version, Value: 0.0.1-SNAPSHOT
