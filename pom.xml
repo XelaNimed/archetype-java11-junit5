@@ -18,6 +18,15 @@
         </license>
     </licenses>
 
+	<developers>
+		<developer>
+			<name>Alexey Demin</name>
+			<email>xela.nimed.github@gmail.com</email>
+			<organization>not specified</organization>
+			<organizationUrl>https://github.com/XelaNimed</organizationUrl>
+		</developer>
+	</developers>
+
     <scm>
         <connection>scm:git:git://github.com:xelanimed/archetype-java11-junit5.git</connection>
         <developerConnection>scm:git:ssh://github.com:xelanimed/archetype-java11-junit5.git</developerConnection>
@@ -48,10 +57,10 @@
 	                <version>3.3.0</version>
 	                <executions>
 	                    <execution>
-	                    <id>attach-sources</id>
-	                    <goals>
-	                        <goal>jar-no-fork</goal>
-	                    </goals>
+		                    <id>attach-sources</id>
+		                    <goals>
+		                        <goal>jar-no-fork</goal>
+		                    </goals>
 	                    </execution>
 	                </executions>
 	            </plugin>
