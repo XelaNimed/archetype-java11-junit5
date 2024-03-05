@@ -26,11 +26,6 @@ under the License.
 	name="java11-junit5">
 
     <requiredProperties>
-	    <requiredProperty key="groupId" />
-	    <requiredProperty key="artifactId" />
-	    <requiredProperty key="version">
-	      <defaultValue>0.0.1-SNAPSHOT</defaultValue>
-	    </requiredProperty>
 	    <requiredProperty key="package">
 	      <defaultValue>${groupId}.${artifactId.replaceAll("-", "_")}</defaultValue>
 	    </requiredProperty>

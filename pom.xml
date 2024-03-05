@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.xelanimed</groupId>
 	<artifactId>java11-junit5</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.3</version>
 	<packaging>maven-archetype</packaging>
 
 	<name>io.github.xelanimed:java11-junit5</name>
@@ -17,6 +17,15 @@
             <url>https://opensource.org/licenses/Apache-2.0</url>
         </license>
     </licenses>
+
+	<developers>
+		<developer>
+			<name>Alexey Demin</name>
+			<email>xela.nimed.github@gmail.com</email>
+			<organization>not specified</organization>
+			<organizationUrl>https://github.com/XelaNimed</organizationUrl>
+		</developer>
+	</developers>
 
     <scm>
         <connection>scm:git:git://github.com:xelanimed/archetype-java11-junit5.git</connection>
@@ -48,10 +57,10 @@
 	                <version>3.3.0</version>
 	                <executions>
 	                    <execution>
-	                    <id>attach-sources</id>
-	                    <goals>
-	                        <goal>jar-no-fork</goal>
-	                    </goals>
+		                    <id>attach-sources</id>
+		                    <goals>
+		                        <goal>jar-no-fork</goal>
+		                    </goals>
 	                    </execution>
 	                </executions>
 	            </plugin>
