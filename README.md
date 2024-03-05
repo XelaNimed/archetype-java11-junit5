@@ -67,5 +67,4 @@ Output:
 ```
 
 Default values:
-- `version` - `0.0.1.-SNAPSHOT`
 - `package` - `${groupId}.${artifactId}`
