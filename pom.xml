@@ -8,7 +8,7 @@
 	<packaging>maven-archetype</packaging>
 
 	<name>io.github.xelanimed:java11-junit5</name>
-	<description>Archetype for Java 11 and jUnit 5</description>
+	<description>Archetype for generate Java 11 projects with jUnit 5</description>
 	<url>https://github.com/xelanimed/archetype-java11-junit5</url>
 
     <licenses>
