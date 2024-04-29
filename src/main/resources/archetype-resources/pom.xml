@@ -159,7 +159,7 @@
 				<!-- https://central.sonatype.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.13</version>
+					<version>3.13.0</version>
 				</plugin>
 				<!-- https://central.sonatype.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
 				<plugin>
