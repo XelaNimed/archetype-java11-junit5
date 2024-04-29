@@ -130,6 +130,9 @@
 				<plugin>
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>3.3.1</version>
+					<configuration>
+						<escapeString>\</escapeString>
+					</configuration>
 					<executions>
 						<execution>
 							<id>replace-placeholders-in-readme</id>
@@ -139,7 +142,6 @@
 							</goals>
 							<configuration>
 								<outputDirectory>${project.basedir}</outputDirectory>
-								<escapeString>\</escapeString>
 								<resources>
 									<resource>
 										<directory>${project.basedir}/src/main/resources/filterable</directory>
@@ -152,31 +154,12 @@
 								<encoding>UTF-8</encoding>
 							</configuration>
 						</execution>
-						<execution>
-							<id>copy-readme-to-output</id>
-							<phase>compile</phase>
-							<goals>
-								<goal>copy-resources</goal>
-							</goals>
-							<configuration>
-								<outputDirectory>${project.build.outputDirectory}</outputDirectory>
-								<resources>
-									<resource>
-										<directory>${project.basedir}</directory>
-										<includes>
-											<include>README.md</include>
-										</includes>
-									</resource>
-								</resources>
-								<encoding>UTF-8</encoding>
-							</configuration>
-						</execution>
 					</executions>
 				</plugin>
 				<!-- https://central.sonatype.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.12.1</version>
+					<version>3.13</version>
 				</plugin>
 				<!-- https://central.sonatype.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
 				<plugin>
@@ -186,7 +169,7 @@
 				<!-- https://central.sonatype.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
-					<version>3.3.0</version>
+					<version>3.4.1</version>
 					<configuration>
 						<archive>
 							<manifestEntries>
@@ -210,7 +193,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-source-plugin</artifactId>
-					<version>3.3.0</version>
+					<version>3.3.1</version>
 					<executions>
 						<execution>
 							<id>attach-sources</id>
@@ -228,6 +211,14 @@
 					<configuration>
 						<javadocExecutable>${javadocExecutable}</javadocExecutable>
 						<source>${java.version}</source>
+						<version>true</version>
+						<!-- See more about doclint syntax here: https://docs.oracle.com/en/java/javase/17/docs/specs/man/javadoc.html#additional-options-provided-by-the-standard-doclet -->
+						<doclint>all,-accessibility,-missing</doclint>
+						<additionalJOptions>
+							<additionalJOption>-J-Duser.language=en_US</additionalJOption>
+						</additionalJOptions>
+						<locale>en_US</locale>
+						<bottom><![CDATA[Copyright &copy; {currentYear}, <a href="${project.organization.url}">${organizationName}<a>]]></bottom>
 					</configuration>
 					<executions>
 						<execution>
