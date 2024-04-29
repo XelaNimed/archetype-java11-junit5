@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.xelanimed</groupId>
 	<artifactId>java11-junit5</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4</version>
 	<packaging>maven-archetype</packaging>
 
 	<name>io.github.xelanimed:java11-junit5</name>
